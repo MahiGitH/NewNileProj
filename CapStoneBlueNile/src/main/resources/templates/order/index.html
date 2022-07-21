@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>Order Food</title>
+    <meta name="description" content="This is the description">
+<!--    <link rel="stylesheet" href="styles.css" />-->
+<!--    <script src="script.js" async></script>-->
+
+    <link href="../static/css/styles.css"  th:href="@{/styles.css}" rel="stylesheet" type="text/css" />
+<!--    <script src="../../static/js/script.js" th:src="@{/js/script.js}" async></script>-->
+    <title>The Generics</title>
+    <meta name="description" content="This is the description">
+    <link rel="stylesheet" href="styles.css" />
+<!--    <link th:href="@{/styles.css}" rel="stylesheet" type="text/css" />-->
+    <script src="script.js" async th:src="@{/script.js}"></script>
+
+
+</head>
+
+    <body>
+        <div class=grid>
+
+            <div class="logo">
+                <a th:href="@{/}">
+                    <img class="logo_image" th:src="@{/images/nile_logo.png}" alt="nile Logo">
+                </a>
+            </div>
+
+            <ul class="nav_list">
+                <li><a href="../index.html" th:href= "@{/}" title="Home page">Home</a></li>
+                <li><a href="../menu/index.html" th:href= "@{/menu}" title="Menu page">Menus</a></li>
+                <li><a href="../order/index.html" th:href= "@{/order}" title="order page">Order</a></li>
+                <li><a href="../contact/contact1.html" th:href= "@{/contact}" title="contact page">Contact</a></li>
+            </ul>
+            <a class="clickable" href="../mobilemenu/index.html">
+<!--                <img src="three_lines.png" width="30" height="30">-->
+            </a>
+            <section class="container content-section">
+                <h2 class="section-header">List of Foods</h2>
+                <div class="shop-items">
+                    <div class="shop-item">
+                        <span class="shop-item-title">Food 1</span>
+                        <img class="shop-item-image" th:src="@{/images/BabyShirt.jpg}">
+                        <div class="shop-item-details">
+                            <span class="shop-item-price">$12.99</span>
+                            <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                        </div>
+                    </div>
+                    <div class="shop-item">
+                        <span class="shop-item-title">Food 2</span>
+                        <img class="shop-item-image" th:src="@{/images/BabyShirt.jpg}">
+                        <div class="shop-item-details">
+                            <span class="shop-item-price">$14.99</span>
+                            <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                        </div>
+                    </div>
+                    <div class="shop-item">
+                        <span class="shop-item-title">Food 3</span>
+                        <img class="shop-item-image" th:src="@{/images/Capture.PNG}">
+                        <div class="shop-item-details">
+                            <span class="shop-item-price">$9.99</span>
+                            <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                        </div>
+                    </div>
+                    <div class="shop-item">
+                        <span class="shop-item-title">Food 4</span>
+                        <img class="shop-item-image" th:src="@{/images/Capture.PNG}">
+                        <div class="shop-item-details">
+                            <span class="shop-item-price">$19.99</span>
+                            <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="container content-section">
+                <h2 class="section-header"></h2>
+                <div class="shop-items">
+                    <div class="shop-item">
+                        <span class="shop-item-title">food 5</span>
+                        <img class="shop-item-image" th:src="@{/images/Capture.PNG}">
+                        <div class="shop-item-details">
+                            <span class="shop-item-price">$19.99</span>
+                            <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                        </div>
+                    </div>
+                    <div class="shop-item">
+                        <span class="shop-item-title">food</span>
+                        <img class="shop-item-image" th:src="@{/images/Capture.PNG}">
+                        <div class="shop-item-details">
+                            <span class="shop-item-price">$6.99</span>
+                            <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="container content-section">
+                <h2 class="section-header">CART</h2>
+                <div class="cart-row">
+                    <span class="cart-item cart-header cart-column">ITEM</span>
+                    <span class="cart-price cart-header cart-column">PRICE</span>
+                    <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+                </div>
+                <div class="cart-items">
+
+                </div>
+                <div class="cart-total">
+                    <strong class="cart-total-title">Total</strong>
+                    <span class="cart-total-price">$0</span>
+                </div>
+                <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+            </section>
+
+        </div>
+    </body>
+
+</html>

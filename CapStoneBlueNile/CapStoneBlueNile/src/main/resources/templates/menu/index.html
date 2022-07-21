@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Lantern </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <script src="script.js"></script>
+
+    <script>
+        $("#search").click(function(e) {
+            e.preventDefault();
+            $(".search_box").toggleClass('active');
+        });
+    </script>
+
+
+</head>
+
+<body>
+    <div class=grid-layout>
+        <header>
+            <div class="logo">
+                <a href="index.html">
+                    <img class="logo_image" src="images/nile_logo.png" alt="Nile Logo"></a>
+            </div>
+            <div class="nav-menu">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="index.html">Menus</a></li>
+                    <li><a href="../order/index.html">Shop</a></li>
+                    <li><a href="../contact/contact1.html">Contact</a></li>
+
+                </ul>
+            </div>
+            <a class="clickable" href="../mobilemenu/index.html">
+                <img src="images/three_lines.png">
+            </a>
+        </header>
+
+
+        <main>
+            <img class="menuphoto" src="images/menuphotofinal.jpg">
+            <img class="aps" src="images/appetizers.png">
+            <img class="entrees" src="images/entrees.png">
+            <img class="desserts" src="images/dessert.png">
+
+        </main>
+
+
+
+
+        <footer>
+            <div class=footer_links>
+                <ul>
+                    <li><a class="white_link" href="../about/index.html">About</a></li>
+                    <div class="circle"></div>
+                    <li><a class="white_link" href="../community/index.html">Community</a></li>
+                    <div class="circle"></div>
+                    <li><a class="white_link" href="../press/press.html">Press</a></li>
+                </ul>
+
+
+
+
+            </div>
+            <div class=socialmedia>
+                <a href="https://twitter.com/lanternnc?lang=en">
+                    <i id=social class="fab fa-twitter-square fa-3x" style="color:#000000;"></i></a>
+                <a href="https://www.instagram.com/lanternrestaurant/">
+                    <i id=social class="fab fa-instagram fa-3x" style="color:#000000;"></i></a>
+                <a href="https://www.facebook.com/LanternNC/?ref=br_rs">
+                    <i id=social class="fab fa-facebook-square fa-3x" style="color:#000000;"></i>
+                </a>
+            </div>
+            <div class=footer_words>
+                <h2>Connect with us to hear more about menu items, events, and updates!</h2>
+                <h3>The Lantern Restaurant</h3>
+                <h3>Copyright</h3>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
